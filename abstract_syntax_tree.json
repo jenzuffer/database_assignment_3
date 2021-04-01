@@ -1,0 +1,54 @@
+{
+    "statement_sequence": {
+        "return": {
+            "variable name": "a"
+        },
+        "while": {
+            "condition": [
+            {
+                "comparator operator": {
+                    "variable name": "b",
+                    "constant value": "0"
+                 }
+                }
+            ],
+            "body":[
+                {
+                "branch": {
+                    "condition": [
+                        {
+                        "comparator operator": {
+                            "variable name": "a",
+                            "variable name": "b"
+                        }
+                        }
+                    ],
+                    "if-body": [
+                        {
+                        "assign": {
+                            "variable name": "a",
+                            "binary operator": {
+                                "variable name": "a",
+                                "variable name": "b"
+                            }
+                        }
+                        }
+                    ],
+                    "else-body": [
+                        {
+                        "assign": {
+                            "variable name": "b",
+                            "binary operator": {
+                                "variable name": "b",
+                                "variable name": "a"
+                            }
+                        }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+}
+
